@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- /*页面的编码方式*/ -->
+    <meta charset="UTF-8">
+    <!-- 可视区域，宽度为设备的宽度 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  equiev表示执行一个命令-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 页面的描述信息，供搜索引擎用 -->
+    <title>html中的head标签</title>
+    <script>
+        let name = 'head中的js';
+        console.log(name);
+    </script>
+</head>
+<body>
+    <p>head标签中的内容是为了描述网页的额外内容，主要给浏览器和搜索引擎用。具体的展示是在body标签中</p>
+    <p>head的作用:1)定义基本的元数据信息</p>
+    <p>2)定义CSS的样式，通过style标签或link的方式引入</p>
+    <p>3)定义JavaScript内容，可以通过script标签或link方式引入。head中定义的js将会在页面加载前执行，会阻塞页面加载，所以通常会把js定义在body标签中</p>
+    <p>定义title标签</p>
+    <script>
+        console.log('body中的js');
+    </script>
+</body>
+</html>
