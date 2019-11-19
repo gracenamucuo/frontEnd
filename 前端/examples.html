@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 上边是设置语言 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="戴运鹏">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>示例</title>
+    <link rel="shortcut icon" href="test.png" type="image/x-icon">
+    <!-- 网页显示连接上加图片 -->
+    <link rel="stylesheet" href="day4.css">
+    <!-- stylesheet表示文档的样式表 href表示样式表文档路径 css文件经常放在头部 -->
 </head>
+
 <body>
     <em>斜体强调</em>
     <p><strong>强调</strong></p>
@@ -14,5 +22,76 @@
     <input type="text" disabled="disabled">
     <input type="text" disabled>
     <!-- 上边的disabled属性可以不用值，其本身就是值，这是布尔属性 -->
+    <script src="day4.js"></script>
+    <!-- script一般放在尾部 -->
+    <h1>我是标题</h1>
+    <!-- 一共有六种标题 h1 - h6 -->
+    <h3 id="静夜思">静夜思</h3>
+    <p>窗前明月光</p>
+    <p>疑是地上霜</p>
+    <p>举头望明月</p>
+    <p>低头思故乡</p>
+    <span>没有语意的元素</span>
+    <span style="font-size: 33px; margin: 100px;">这是标题吗</span>
+    <!-- 上边为无序列表 -->
+    <ul>
+        <li>豆浆</li>
+        <li>油条</li>
+        <li>豆汁</li>
+    </ul>
+    <!--有序列表 -->
+    <ol>
+        <li>奔着</li>
+        <li>天火</li>
+        <li>走</li>
+    </ol>
+
+    <!-- 嵌套列表 -->
+    <ol>
+        <li>我是第一步</li>
+        <ul>
+            <li>买菜</li>
+            <li>卖肉</li>
+        </ul>
+        <li>第二步</li>
+        <ul>
+            <li>切肉</li>
+            <li>切菜</li>
+        </ul>
+
+    </ol>
+
+    <!-- 强调  emphasis -->
+    <p>我<em>非常</em>搞笑</p>
+    <!-- 斜体 -->
+    <i>试一次</i>
+    <!-- 粗体 -->
+<strong>我是粗体</strong>
+<b>我也是粗体</b>
+<u>我是下划线</u>
+<!-- 以上用没有语义的粗体斜体和下划线 不是好的选择 建议用CSS -->
+<p>
+    我是
+    <a href="www.baidu.com">百度</a>
+</p>
+
+<a href="www.baidu.com">
+    <img src="test.png" alt="这是logo">
+    <!-- alt属性是当图片显示不出来的时候的说明 -->
+</a>
+<!-- 当前页面链接 -->
+<a href="#静夜思">我找静夜思</a>
 </body>
+<!-- 下载 不行-->
+<p>
+    <a href="test.png" download="哦哦" onclick="saveImage.document.execCommand('saveAs')">下载</a>
+</p>
+
+<p>
+    <a href="day1.html">另一个</a>
+</p>
+
+<p>
+    <a href="mailTo:122@qq.com">点击发送qq邮箱</a>
+</p>
 </html>
